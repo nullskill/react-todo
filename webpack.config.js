@@ -22,7 +22,10 @@
 	},
 	resolve: {
 		root: __dirname,
-// Aliases
+		modulesDirectories: [
+			'node_modules',
+			'./app/components'
+		],
 		alias: {
 			applicationStyles: 'app/styles/app.scss'
 		},
