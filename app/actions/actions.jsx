@@ -13,8 +13,15 @@ export var toggleShowCompleted = () => {
 
 export var addTodo = (text) => {
   return {
-  	type: 'ADD_TODO',
-  	text
+    type: 'ADD_TODO',
+    text
+  };
+};
+
+export var addTodos = (todos) => {
+  return {
+  	type: 'ADD_TODOS',
+  	todos
   };
 };
 
