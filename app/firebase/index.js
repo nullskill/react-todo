@@ -3,11 +3,11 @@ import firebase from 'firebase';
 try {
   // Initialize Firebase
   var config = {
-    apiKey: "AIzaSyCPreY9EVeAZxwQYFVeJlXz0bgXkwrfPIU",
-    authDomain: "study-todo-app.firebaseapp.com",
-    databaseURL: "https://study-todo-app.firebaseio.com",
-    storageBucket: "study-todo-app.appspot.com",
-    messagingSenderId: "274143062608"
+    apiKey: process.env.API_KEY,
+    authDomain: process.env.AUTH_DOMAIN,
+    databaseURL: process.env.DATABASE_URL,
+    storageBucket: process.env.STORAGE_BUCKET
+    // messagingSenderId: "274143062608"
   };
   firebase.initializeApp(config);
 } catch(e) {
